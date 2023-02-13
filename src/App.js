@@ -5,12 +5,12 @@ import { Container } from 'react-bootstrap';
 
 import Pokemon_page from './pages/Pokemon_page';
 import Pokemon_details from './pages/Pokemon_details';
-import Navigation_Bar from './components/Navigation_Bar';
+import NavigationBar from './components/NavigationBar';
 
 const App = () => {
   return (
     <Router>
-      <Navigation_Bar/>
+      <NavigationBar/>
       <Container>
         <Route exact path='/' component = {Pokemon_page}/>
         <Route path='/pokemon/:id' component={Pokemon_details}/>

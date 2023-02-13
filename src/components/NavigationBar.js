@@ -2,7 +2,7 @@ import React from 'react'
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Container } from 'react-bootstrap';
 
-const Navigation_Bar = () => {
+const NavigationBar = () => {
   return (
     <header>
             <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
@@ -24,4 +24,4 @@ const Navigation_Bar = () => {
   )
 }
 
-export default Navigation_Bar
+export default NavigationBar;

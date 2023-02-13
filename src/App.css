@@ -1,15 +1,9 @@
-
-
-
-
 #root{
   background-color: rgb(154, 214, 205);
 }
-
 .link-name{
   background-color: black;
 }
-
 .rock {
   background-color: rgb(148, 81, 81);
 }
@@ -23,7 +17,6 @@
   background-color: #F6D6A7;
 }
 .poison {
-  
   background-color: #e0a7f6;
 }
 .normal {
@@ -43,7 +36,6 @@
 }
 .ground{
   background-color: rgb(219, 158, 16);
-
 }
 .fighting{
   background-color: rgb(255, 77, 0);

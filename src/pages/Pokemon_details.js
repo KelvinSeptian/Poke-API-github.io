@@ -3,8 +3,6 @@ import axios from 'axios'
 import {Card, Row, Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
-
-
 import Loader from '../components/Loader';
 
 const Pokemon_details = ({match}) => {
