@@ -1,4 +1,4 @@
-# Poke-API-github.io
+# Poke-API
 
 
 This is Pokemon List application that is used to preview pokemons and show all their information such as Name, Type , Move and etc...
