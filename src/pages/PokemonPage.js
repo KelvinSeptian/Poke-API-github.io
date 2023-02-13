@@ -5,22 +5,18 @@ import { Row, Col } from 'react-bootstrap';
 
 import Pokemon from '../components/Pokemon';
 import Loader from '../components/Loader';
-import Pokemon_details from './Pokemon_details';
 
-const Pokemon_page = () => {
+const PokemonPage = () => {
 
     const [pokemon, setPokemon] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [flag,setFlag]=useState(true);
-    
-    
 
     const getPokemonList = async () => {
         let pokemonArray = [];
         for(let i = 1; i <= 1008; i ++){
             pokemonArray.push(await getPokemonData(i));
         }
-        console.log(pokemonArray);
+
         setPokemon(pokemonArray);
         setLoading(false);
 
@@ -31,7 +27,6 @@ const Pokemon_page = () => {
         const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
         return res;
     }
-    
 
     useEffect(() => {
         getPokemonList();
@@ -63,4 +58,4 @@ const Pokemon_page = () => {
     )
 }
 
-export default Pokemon_page
+export default PokemonPage

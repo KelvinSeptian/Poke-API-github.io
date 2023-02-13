@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 import Loader from '../components/Loader';
 
-const Pokemon_details = ({match}) => {
+const PokemonDetails = ({match}) => {
     
     const id = match.params.id
 
@@ -15,7 +15,7 @@ const Pokemon_details = ({match}) => {
     const getPokemon = async (id) => {
         const details = await getPokemonData(id);
         setPokemonDetails(details.data);
-        console.log(details.data)
+
         setLoading(false);
     }
 
@@ -112,4 +112,4 @@ const Pokemon_details = ({match}) => {
     )
 }
 
-export default Pokemon_details
+export default PokemonDetails

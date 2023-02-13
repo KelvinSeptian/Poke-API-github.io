@@ -3,8 +3,8 @@ import './App.css';
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
-import Pokemon_page from './pages/Pokemon_page';
-import Pokemon_details from './pages/Pokemon_details';
+import PokemonPage from './pages/PokemonPage';
+import PokemonDetails from './pages/PokemonDetails';
 import NavigationBar from './components/NavigationBar';
 
 const App = () => {
@@ -12,8 +12,8 @@ const App = () => {
     <Router>
       <NavigationBar/>
       <Container>
-        <Route exact path='/' component = {Pokemon_page}/>
-        <Route path='/pokemon/:id' component={Pokemon_details}/>
+        <Route exact path='/' component = {PokemonPage}/>
+        <Route path='/pokemon/:id' component={PokemonDetails}/>
       </Container>
     </Router>
   );
