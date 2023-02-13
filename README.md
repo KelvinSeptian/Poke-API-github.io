@@ -21,4 +21,8 @@ Then You will be able to click on one of them which will redirect you to the inf
 Then you can use the Pokemon icon in thee navigation bar to go back to the pokemon list.
 
 
+# Steps to run 
 
+-npm i
+
+-npm start
